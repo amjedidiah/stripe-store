@@ -5,6 +5,7 @@ import { useAppDispatch } from "redux/hooks";
 import { Dispatch, SetStateAction, useCallback } from "react";
 import { ButtonProps } from "components/button/button";
 import { Label } from "components/form/components/form-input/form-input";
+import { useNavigate } from "react-router-dom";
 
 const formFields = [
   {
@@ -59,13 +60,16 @@ const buttons = [
 
 export default function Register() {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const handleRegister = useCallback(
     async (
       { displayName, email, password }: FormValues,
       setFormValues: Dispatch<SetStateAction<FormValues>>
     ) => {
-      dispatch(emailRegisterPending({ displayName, email, password }));
-      setFormValues({});
+      await dispatch(emailRegisterPending({ displayName, email, password }));
+      await setFormValues({});
+
+      navigate("/");
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []

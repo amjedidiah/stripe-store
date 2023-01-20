@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, RouteProps } from "react-router-dom";
+import { BrowserRouter, Routes, Route, RouteProps, Navigate } from "react-router-dom";
 import Spinner from "components/spinner/spinner";
 import { Suspense, lazy } from "react";
 import Navigation from "components/navigation/navigation";
@@ -25,6 +25,7 @@ export default function AppRoutes() {
               <Route key={route.id} {...route} />
             ))}
           </Route>
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

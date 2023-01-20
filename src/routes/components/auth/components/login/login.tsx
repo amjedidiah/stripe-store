@@ -2,6 +2,7 @@ import { ButtonProps } from "components/button/button";
 import { Label } from "components/form/components/form-input/form-input";
 import Form, { FormValues } from "components/form/form";
 import { Dispatch, SetStateAction, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "redux/hooks";
 import { emailLoginPending } from "redux/slices/user.slice";
 import styles from "routes/components/auth/auth.module.scss";
@@ -46,14 +47,17 @@ const buttons = [
 
 export default function Login() {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate()
 
   const handleLogin = useCallback(
     async (
       { email, password }: FormValues,
       setFormValues: Dispatch<SetStateAction<FormValues>>
     ) => {
-      dispatch(emailLoginPending({ email, password }));
-      setFormValues({});
+      await dispatch(emailLoginPending({ email, password }));
+      await setFormValues({});
+
+      navigate("/");
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []
