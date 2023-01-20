@@ -3,6 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b8a73ee7-ccf3-4482-8d93-7d40857051a5/deploy-status)](https://app.netlify.com/sites/stripe-store-aj/deploys)
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cedca25c042e49878378def1e05764b2)](https://www.codacy.com/gh/amjedidiah/stripe-store/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=amjedidiah/stripe-store&amp;utm_campaign=Badge_Grade)
+
 ## Available Scripts
 
 In the project directory, you can run:
