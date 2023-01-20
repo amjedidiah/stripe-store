@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b8a73ee7-ccf3-4482-8d93-7d40857051a5/deploy-status)](https://app.netlify.com/sites/stripe-store-aj/deploys)
 
 ## Available Scripts
 
