@@ -1,0 +1,141 @@
+{
+"name": "Crwn Clothing",
+"short_name": "Crwn Clothing by Jedidiah",
+"icons": [
+    {
+    "src": "favicon.ico",
+    "sizes": "64x64 32x32 24x24 16x16",
+    "type": "image/x-icon"
+    },
+    {
+    "src": "android-chrome-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "purpose": "any"
+    },
+    {
+    "src": "android-chrome-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "maskable"
+    }
+],
+"start_url": ".",
+"theme_color": "#000000",
+"background_color": "#ffffff",
+"display": "standalone",
+"description": "Developed a Progressive Web App for an eCommerce site using React(Typescript), React Router, Redux(with redux-toolkit and redux-saga), and Firebase, complete with Stripe payment integration using serverless functions, and deployed it to Netlify.\n\nImplemented Context API, CSS modules, GraphQL(with Apollo client) and testing with RTL.\n\nVisit here: https://resplendent-salmiakki-1f772a.netlify.app",
+"dir": "ltr",
+"lang": "en",
+"orientation": "any",
+"display_override": [],
+"scope": "/",
+"shortcuts": [
+    {
+        "name": "Shop with us",
+        "short_name": "Shop",
+        "description": "Shop your favorite outfits",
+        "url": "/shop?source=pwa",
+        "icons": [
+            {
+                "src": "favicon.ico",
+                "sizes": "64x64 32x32 24x24 16x16"
+            },
+            {
+                "src": "android-chrome-192x192.png",
+                "sizes": "192x192"
+            },
+            {
+                "src": "android-chrome-512x512.png",
+                "sizes": "512x512"
+            }
+        ]
+    },
+    {
+        "name": "Login or Signup to your account",
+        "short_name": "Auth",
+        "description": "Authenticate on our platform",
+        "url": "/auth?source=pwa",
+        "icons": [
+            {
+                "src": "favicon.ico",
+                "sizes": "64x64 32x32 24x24 16x16"
+            },
+            {
+                "src": "android-chrome-192x192.png",
+                "sizes": "192x192"
+            },
+            {
+                "src": "android-chrome-512x512.png",
+                "sizes": "512x512"
+            }
+        ]
+    },
+    {
+        "name": "Checkout your cart",
+        "short_name": "Checkout",
+        "description": "Checkout items in your cart with Stripe",
+        "url": "/checkout?source=pwa",
+        "icons": [
+            {
+                "src": "favicon.ico",
+                "sizes": "64x64 32x32 24x24 16x16"
+            },
+            {
+                "src": "android-chrome-192x192.png",
+                "sizes": "192x192"
+            },
+            {
+                "src": "android-chrome-512x512.png",
+                "sizes": "512x512"
+            }
+        ]
+    }
+],
+"categories": [
+    "shopping"
+],
+"screenshots": [
+    {
+        "src": "screenshots/1280x800-screenshot.png",
+        "sizes": "1280x800",
+        "type": "image/png"
+    },
+    {
+        "src": "screenshots/750x1334-screenshot.png",
+        "sizes": "750x1334",
+        "type": "image/png"
+    },
+    {
+        "src": "screenshots/1280x800-screenshot-shop.png",
+        "sizes": "1280x800",
+        "type": "image/png"
+    },
+    {
+        "src": "screenshots/750x1334-screenshot-shop.png",
+        "sizes": "750x1334",
+        "type": "image/png"
+    },
+    {
+        "src": "screenshots/1280x800-screenshot-checkout.png",
+        "sizes": "1280x800",
+        "type": "image/png"
+    },
+    {
+        "src": "screenshots/750x1334-screenshot-checkout.png",
+        "sizes": "750x1334",
+        "type": "image/png"
+    },
+    {
+        "src": "screenshots/1280x800-screenshot-auth.png",
+        "sizes": "1280x800",
+        "type": "image/png"
+    },
+    {
+        "src": "screenshots/750x1334-screenshot-auth.png",
+        "sizes": "750x1334",
+        "type": "image/png"
+    }
+],
+"prefer_related_applications": false
+}

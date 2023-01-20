@@ -1,0 +1,13 @@
+@import "~shared/styles/mixins";
+
+.spinner-overlay {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-container {
+  @include spinner-container;
+}
